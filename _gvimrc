@@ -1,12 +1,19 @@
-" Font to use
-set guifont=DejaVu\ Sans\ Mono:h10
-
 " Theme for gVim
-let g:gruvbox_contrast_light="soft"
-set background=dark
-colorscheme gruvbox
+" theme_styles = [default, palenight, ocean, lighter, darker]
+" ayu styles = [light, mirage, dark]
+"let g:material_theme_style = 'ocean'
+"let g:material_terminal_italics = 1
+"let g:tokyonight_style = 'night'
+"let g:tokyonight_enable_italic = 1
+"let g:airline_theme = 'tokyonight'
+let ayucolor = "dark"
+colorscheme ayu
+"LuciusBlackLowContrast
+  
+" Font to use
+set guifont=Cascadia_Code:h11,DejaVu_Sans_Mono:h10
 
-" Some options to make gVim appear more terminal vim
+" Some options to make gVim appear more like terminal vim
 set guioptions-=m
 set guioptions-=T
 set guioptions-=R
@@ -14,3 +21,10 @@ set guioptions-=r
 set guioptions-=l
 set guioptions-=L
 set guioptions+=c
+
+" Start gVim maximized
+au GUIenter * simalt ~x
+
+set cursorline " cursorline for gVim"
+
+set vb t_vb=
