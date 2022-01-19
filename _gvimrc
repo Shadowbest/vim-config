@@ -6,8 +6,10 @@
 "let g:tokyonight_style = 'night'
 "let g:tokyonight_enable_italic = 1
 "let g:airline_theme = 'tokyonight'
-let ayucolor = "dark"
-colorscheme ayu
+"let ayucolor = "dark"
+let g:space_vim_dark_background=234
+colorscheme space-vim-dark
+hi Comment cterm=italic
 "LuciusBlackLowContrast
   
 " Font to use

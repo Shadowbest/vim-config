@@ -28,7 +28,7 @@ set nocursorline " no cursorline on terminal"
 set breakindent
 
 " Disable automatic comment insertion
-autocmd FileType javascript,scss,sass,less setlocal formatoptions-=c formatoptions-=r formatoptions-=o
+autocmd FileType javascript,scss,sass,less,php setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 
 " Highlight matching brackets
 set showmatch
@@ -56,6 +56,12 @@ nmap <leader>qwe :source $HOME/_vimrc <CR>
 nmap <leader>gso :source $HOME/_gvimrc <CR>
 nmap <leader>ndt :NERDTree<CR>
 nmap <leader>q :q<CR>
+nmap <leader>,e :edit $HOME/_vimrc <CR>
+nmap <leader>,g :edit $HOME/_gvimrc <CR>
+nmap <leader>l :bn<CR>
+nmap <leader>h :bp<CR>
+nnoremap <C-h> ^
+nnoremap <C-l> $
 
 " Syntax highlighting
 set termguicolors
@@ -87,6 +93,8 @@ Plug 'neoclide/coc.nvim', { 'branch': 'release' }
 Plug 'ghifarit53/tokyonight-vim'
 Plug 'wojciechkepka/vim-github-dark'
 Plug 'ayu-theme/ayu-vim'
+Plug 'mangeshrex/uwu.vim'
+Plug 'liuchengxu/space-vim-dark'
 call plug#end()
 
 let g:html_indent_script1 = "inc"
